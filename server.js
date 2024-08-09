@@ -43,6 +43,8 @@ APP.post('/register', async (req, res) => {
 // Login route
 APP.post('/login', async (req, res) => {
     const { email, password } = req.body;
+    // const email = req.body.email;
+    //const password = req.body.password;
 
     try {
         // Query the database to find the user by email
