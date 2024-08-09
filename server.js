@@ -17,7 +17,7 @@ APP.post('/register', async (req, res) => {
     const { username, email, password } = req.body;
 
     try {
-        // Directly store the password (not recommended for real applications)
+
         // Check if the email is already in use
         const [existingUser] = await queryDatabase(
             'SELECT * FROM tblloginform WHERE userEmail = ?',
