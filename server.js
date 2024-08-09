@@ -84,8 +84,8 @@ APP.get('/register', (request, response) => {
 });
 
 // Handle 404 - Page Not Found
-APP.use((req, res, next) => {
-    res.status(404).send("Sorry, can't find that!");
+APP.use((request, response, next) => {
+    response.status(404).send("Sorry, can't find that!");
 });
 
 // Error handling middleware
